@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Mainc1{
     public static void main(String[] args){
-        try(Socket socket = new Socket("localhost", 5000)){
+        try(Socket socket = new Socket("192.168.1.17", 5000)){ //Adresse ip miova 
             BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter output =new PrintWriter(socket.getOutputStream(),true);
             Scanner scanner=new Scanner(System.in);
